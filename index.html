@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Wave Transition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <svg style="position: absolute; width: 0; height: 0;">
+            <defs>
+                <clipPath id="wave-mask" clipPathUnits="objectBoundingBox">
+                    <path d="M0,0.55 Q0.25,0.50 0.5,0.55 T1,0.55 V1 H0 Z">
+                        <animate 
+                            attributeName="d" 
+                            dur="5s"
+                            repeatCount="indefinite"
+                            values="M0,0.55 Q0.25,0.50 0.5,0.55 T1,0.55 V1 H0 Z;
+                                   M0,0.55 Q0.25,0.60 0.5,0.55 T1,0.55 V1 H0 Z;
+                                   M0,0.55 Q0.25,0.50 0.5,0.55 T1,0.55 V1 H0 Z"
+                        />
+                    </path>
+                </clipPath>
+            </defs>
+        </svg>
+        <div class="section-wrapper">
+            <section class="section section1">
+                <div class="content">
+                    <h1>Mountain Serenity</h1>
+                    <p>Discover the beauty of nature</p>
+                </div>
+            </section>
+            <section class="section section2">
+                <div class="content">
+                    <h1>Ocean Sunset</h1>
+                    <p>Experience tranquil moments</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
